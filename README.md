@@ -4,13 +4,13 @@ This project uses a deep learning model based on LSTM neural networks to predict
 
 ---
 
-## 🌍 Overview
+## Overview
 
 Air pollution is a major health hazard in cities like Beijing, where PM2.5 levels can rise unpredictably. This project presents a robust forecasting system powered by a multi-layer LSTM model that learns from patterns in air quality and weather data. The model is accurate enough to support real-world air quality alerts, and its performance is demonstrated through visualizations in Jupyter notebooks.
 
 ---
 
-## 🔧 Key Features
+## Key Features
 
 * **LSTM Model:** 3-layer architecture with batch normalization, dropout, and L2 regularization.
 * **Data Preprocessing:** Time-based interpolation, mean imputation, and 72-hour sliding sequence windows.
@@ -19,7 +19,7 @@ Air pollution is a major health hazard in cities like Beijing, where PM2.5 level
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 beijing-air-predictor/
@@ -36,16 +36,16 @@ beijing-air-predictor/
 
 ---
 
-## 🧠 Technical Overview
+## Technical Overview
 
-### 📊 Data Processing
+### Data Processing
 
 * **Loading:** Standardizes columns, converts timestamps, sets datetime index.
 * **Cleaning:** Uses time-based interpolation and mean imputation.
 * **Sequences:** Creates 72-hour sliding windows for temporal context.
 * **Scaling:** Applies MinMaxScaler to normalize data.
 
-### 🧱 Model Architecture
+### Model Architecture
 
 ```python
 Sequential([
@@ -71,7 +71,7 @@ Sequential([
 * **Batch Norm:** Stabilizes and accelerates training.
 * **Adam Optimizer:** Uses a learning rate of 0.0005 for smooth convergence.
 
-### ⚙️ Training Setup
+### Training Setup
 
 * **Lookback Window:** 72 hours
 * **Validation Split:** 20%
@@ -81,7 +81,7 @@ Sequential([
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 

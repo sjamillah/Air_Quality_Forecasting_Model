@@ -2,13 +2,9 @@
 
 This project uses a deep learning model based on LSTM neural networks to predict short-term PM2.5 air pollution levels in Beijing. By analyzing historical air quality and weather data, the model captures Beijing’s complex pollution dynamics—shaped by weather, traffic, and seasonal heating—achieving a validation RMSE of **46.8831 μg/m³**.
 
----
-
 ## Overview
 
 Air pollution is a major health hazard in cities like Beijing, where PM2.5 levels can rise unpredictably. This project presents a robust forecasting system powered by a multi-layer LSTM model that learns from patterns in air quality and weather data. The model is accurate enough to support real-world air quality alerts, and its performance is demonstrated through visualizations in Jupyter notebooks.
-
----
 
 ## Key Features
 
@@ -16,8 +12,6 @@ Air pollution is a major health hazard in cities like Beijing, where PM2.5 level
 * **Data Preprocessing:** Time-based interpolation, mean imputation, and 72-hour sliding sequence windows.
 * **Modular Pipeline:** Scripts for loading, preprocessing, training, evaluation, and prediction.
 * **Performance:** Achieves **46.8831 μg/m³ RMSE**, suitable for real-time air quality monitoring.
-
----
 
 ## Project Structure
 
@@ -33,8 +27,6 @@ beijing-air-predictor/
 ├── requirements.txt                   # Python dependencies
 └── README.md                          # Project documentation
 ```
-
----
 
 ## Technical Overview
 
@@ -79,8 +71,6 @@ Sequential([
 * **Learning Rate Scheduler:** Halves rate after 5 stagnant epochs
 * **Batch Size:** 64 (adjustable)
 
----
-
 ## Installation & Setup
 
 ### Prerequisites
@@ -108,8 +98,6 @@ mkdir notebooks
 # Place train.csv and test.csv in the notebooks/ directory
 ```
 
----
-
 ## Usage Guide
 
 Run the scripts in sequence:
@@ -123,15 +111,11 @@ python scripts/predictions.py      # Generate predictions on test set
 
 Visualizations such as time series plots, histograms, and training loss curves can be found in `notebooks/air_quality_forecasting.ipynb`.
 
----
-
 ## Model Performance
 
 * **Validation RMSE:** 46.8831 μg/m³
 * **Strengths:** Handles daily cycles and moderate missing values well.
 * **Limitations:** May struggle with sharp spikes or extreme pollution events.
-
----
 
 ## Data Requirements
 
@@ -157,8 +141,6 @@ datetime,pm2.5,DEWP,TEMP,PRES,cbwd,Iws,Is,Ir
 2010-01-01 01:00:00,148.0,-15,1.0,1020.0,SE,2.68,0,0
 ```
 
----
-
 ## Reproducibility
 
 To replicate results:
@@ -166,8 +148,6 @@ To replicate results:
 * Use the `requirements.txt` versions.
 * Maintain the 72-hour lookback setting.
 * Run scripts in order as listed above.
-
----
 
 ## Contributing
 
@@ -181,8 +161,6 @@ Want to improve the model or add new features?
 
 Please follow PEP 8, add helpful comments/docstrings, and include tests where relevant.
 
----
-
 ## Troubleshooting
 
 * **Memory Issues:** Reduce batch size to 32 in `evaluate_model.py`.
@@ -190,5 +168,3 @@ Please follow PEP 8, add helpful comments/docstrings, and include tests where re
 * **Prediction Failures:** Ensure `test.csv` has the same format as `train.csv`.
 
 For help, open a GitHub issue and include your environment and error messages.
-
----

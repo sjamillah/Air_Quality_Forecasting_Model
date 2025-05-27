@@ -110,7 +110,7 @@ mkdir notebooks
 
 ---
 
-## ▶️ Usage Guide
+## Usage Guide
 
 Run the scripts in sequence:
 
@@ -121,7 +121,7 @@ python scripts/evaluate_model.py   # Train and evaluate the LSTM model
 python scripts/predictions.py      # Generate predictions on test set
 ```
 
-📓 Visualizations such as time series plots, histograms, and training loss curves can be found in `notebooks/air_quality_forecasting.ipynb`.
+Visualizations such as time series plots, histograms, and training loss curves can be found in `notebooks/air_quality_forecasting.ipynb`.
 
 ---
 

@@ -1,7 +1,3 @@
-Here’s a clean, professional, and well-structured `README.md` file for your **Beijing Air Quality Predictor** project. I've replaced the `data` folder with `notebooks` as requested, and ensured everything reads smoothly for GitHub:
-
----
-
 # Beijing Air Quality Predictor
 
 This project uses a deep learning model based on LSTM neural networks to predict short-term PM2.5 air pollution levels in Beijing. By analyzing historical air quality and weather data, the model captures Beijing’s complex pollution dynamics—shaped by weather, traffic, and seasonal heating—achieving a validation RMSE of **46.8831 μg/m³**.
